@@ -9,10 +9,10 @@ public class WeiXinQiYeConstants {
     public static final String AGENTID = "1000003";
 
     // 企业ID
-    public static final String CORPID = "wx826e460e2dfdfef1";
+    public static final String CORPID = "wx01ee8f220c82c2b3";
 
     // 应用的凭证密钥
-    public static final String CORPSECRET = "WDVdx4xkEdUG7RAWoTPH4mLPmvKBWTCRY042fcAy51s";
+    public static final String CORPSECRET = "uLQ3YxRHohuhKVM1EK5ahKTzucxuntKoj8i-fPmIXJU";
 
     // 获取access_token的url
     public static final String ACCESS_TOKER_URL = "https://qyapi.weixin.qq.com/cgi-bin/gettoken";
