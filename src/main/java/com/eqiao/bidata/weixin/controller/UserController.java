@@ -35,7 +35,7 @@ public class UserController {
         Object userId = session.getAttribute("UserId");
         logger.info("userId: " + userId);
         model.addAttribute("userId",userId);
-        return "users";
+        return "weixin/users";
     }
 
 }

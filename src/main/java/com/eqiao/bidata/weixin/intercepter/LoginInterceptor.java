@@ -22,7 +22,7 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
      */
     private static final String invalidUrl = "/404";
 
-    String [] notFilter = new String[]{"/index","/login","/user/login","/back/index","/back/login"};
+    String [] notFilter = new String[]{"/index","/qa/detail","/register","/user/register","/login","/user/login","/back/index","/back/login"};
 
     /**
      * 预处理回调方法，实现处理器的预处理（如登录检查），第三个参数为响应的处理器
@@ -35,6 +35,11 @@ public class LoginInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         logger.info("===========HandlerInterceptor1 preHandle===========");
+
+        String paths = request.getContextPath();
+        String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+paths+"/";
+        logger.info("basePath " + basePath);
+
         long beginTime = System.currentTimeMillis();//1.开始时间
         startTimeThreadLocal.set(beginTime);//2.线程绑定变量(该数据只有当前请求的线程可见)
 

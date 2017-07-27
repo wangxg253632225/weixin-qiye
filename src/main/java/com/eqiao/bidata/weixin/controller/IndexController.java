@@ -24,7 +24,16 @@ public class IndexController {
      */
     @RequestMapping(value="/login")
     public String login(){
-        return "login";
+        return "user/login";
+    }
+
+    /**
+     * 跳转到前台注册页面
+     * @return
+     */
+    @RequestMapping(value="/register")
+    public String register(){
+        return "user/register";
     }
 
 

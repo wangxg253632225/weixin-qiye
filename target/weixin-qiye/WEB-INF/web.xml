@@ -75,7 +75,7 @@
     <url-pattern>*.png</url-pattern>
     <url-pattern>*.js</url-pattern>
     <url-pattern>*.css</url-pattern>
-    <url-pattern>/static/lib/*</url-pattern>
+    <url-pattern>/static/layui/*</url-pattern>
   </servlet-mapping>
 
   <!-- spring mvc servlet begin -->

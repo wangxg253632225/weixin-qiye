@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 
 /**
  * @author XinGuo
@@ -30,6 +32,11 @@ public class TestTbServiceImpl implements TestTbService {
 		testTbDao.addTestTb(testTb);
 		// 抛异常测试事务
 		//throw new RuntimeException();
+	}
+
+	@Override
+	public List<TestTb> findTestList() {
+		return testTbDao.findTestList();
 	}
 
 }

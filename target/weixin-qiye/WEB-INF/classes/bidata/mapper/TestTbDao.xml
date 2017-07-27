@@ -8,4 +8,10 @@
 		values
 		(#{name},#{birthday})
 	</insert>
+
+	<select id="findTestList" resultType="com.eqiao.bidata.weixin.pojo.TestTb">
+		SELECT
+		*
+		FROM test_tb t
+	</select>
 </mapper>

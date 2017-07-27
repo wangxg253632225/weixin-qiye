@@ -1,5 +1,6 @@
 package com.eqiao.bidata.weixin.controller;
 
+import com.eqiao.bidata.weixin.base.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +13,18 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Controller
 @RequestMapping("/user")
-public class LoginController {
+public class LoginController extends BaseController{
+
+    /**
+     * 前台注册
+     *
+     * @return
+     */
+    @RequestMapping(value = "/register")
+    public String register(){
+        logger.info("注册成功");
+        return "login";
+    }
 
     /**
      * 前台登录
@@ -23,6 +35,7 @@ public class LoginController {
      */
     @RequestMapping(value = "/login")
     public String login(HttpServletRequest request,String name,String password){
+        logger.info("登录成功");
         if(name != null){
             if(name.equals("zhaoxinguo") && password.equals("zhaoxinguo")){
                 request.getSession().setAttribute("name",name);
@@ -51,7 +64,7 @@ public class LoginController {
      */
     @RequestMapping(value = "/userInfo")
     public String userInfo(HttpServletRequest request){
-        return "userInfo";
+        return "user/userInfo";
     }
 
 }

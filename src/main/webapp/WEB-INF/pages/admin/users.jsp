@@ -7,6 +7,7 @@
 --%>
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<jsp:include page="/WEB-INF/pages/common/basePath.jsp"></jsp:include>
 <html>
 <head>
     <title>结果页</title>
