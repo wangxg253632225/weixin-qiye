@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="weixin-qiye-simple:war">
-    <output-path>$PROJECT_DIR$/weixin-qiye-simple/target</output-path>
-    <root id="archive" name="weixin-qiye-simple.war">
-      <element id="artifact" artifact-name="weixin-qiye-simple:war exploded" />
-    </root>
-  </artifact>
-</component>
